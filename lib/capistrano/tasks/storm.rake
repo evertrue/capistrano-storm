@@ -13,7 +13,7 @@ namespace :storm do
   end
 
   desc 'Update the Storm topology with the new one'
-  task update: :kill do
+  task :update do
     on roles(:app) do
       within release_path do
         execute(
@@ -30,4 +30,5 @@ namespace :storm do
   end
 end
 
-after 'deploy:publishing', 'storm:update'
+after 'deploy:publishing', 'storm:kill'
+after 'storm:kill', 'storm:update'

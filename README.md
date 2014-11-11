@@ -26,7 +26,7 @@ for a simple example.
 
 In `Capfile`:
 ```ruby
-require 'capistrano-storm/storm'
+require 'capistrano/storm'
 ```
 
 In your `config/deploy.rb`:

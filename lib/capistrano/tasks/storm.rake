@@ -6,6 +6,7 @@ namespace :storm do
         :sudo,
         '/opt/storm/current/bin/storm',
         'kill',
+        '-w 0',
         fetch(:topology_name)
       )
     end

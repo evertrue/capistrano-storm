@@ -39,7 +39,7 @@ set :topology_class_name, 'com.et.contacts.storm.topology.ContactNotifyTopology'
 set :topology_name, 'contact-change'
 
 # Any additional arguments you want to pass to `storm jar`
-set :topology_args, '5 4 4 5'
+set :topology_other_args, '5 4 4 5'
 ```
 
 ## Contributing

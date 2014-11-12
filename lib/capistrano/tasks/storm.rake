@@ -23,7 +23,7 @@ namespace :storm do
           fetch(:deployed_artifact_filename),
           fetch(:topology_class_name),
           fetch(:topology_name),
-          fetch(:topology_args)
+          fetch(:topology_other_args)
         )
       end
     end

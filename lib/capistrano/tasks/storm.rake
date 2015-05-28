@@ -4,9 +4,7 @@ namespace :storm do
     on roles(:app) do
       execute(
         :sudo,
-        '/opt/storm/current/bin/storm',
-        'kill',
-        '-w 0',
+        '/usr/bin/kill-topology',
         fetch(:topology_name)
       )
     end

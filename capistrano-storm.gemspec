@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-storm'
-  spec.version       = '0.2.0'
+  spec.version       = '0.2.1'
   spec.authors       = ['Jeff Byrnes']
   spec.email         = ['jeff@evertrue.com']
   spec.summary       = %q{Capistrano 3 plugin for handling Storm topologies.}
